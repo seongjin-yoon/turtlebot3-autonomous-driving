@@ -70,7 +70,8 @@ TurtleBot3 (Burger Pi)를 플랫폼으로, LiDAR · IMU · Odometry 데이터를
 
 ### 1. UKF (Unscented Kalman Filter) — 본인 핵심 구현 파트
 
-비선형 시스템에서 일반 EKF의 선형화 오차를 극복하기 위해 **Unscented Transform** 기반의 칼만 필터를 구현하였습니다.
+로봇 운동 모델(x = v·cos θ, y = v·sin θ)의 삼각함수 비선형성으로 인해 EKF의 야코비안 선형화 오차가 커질 수 있어,
+Sigma Point를 비선형 함수에 직접 통과시켜 더 정확한 추정이 가능한 **Unscented Kalman Filter**를 채택하였습니다.
 
 **Prediction Step**
 ```
