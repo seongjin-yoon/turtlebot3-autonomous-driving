@@ -62,9 +62,8 @@ TurtleBot3 (Burger Pi)를 플랫폼으로, LiDAR · IMU · Odometry 데이터를
 
 | # | 내용 | 링크 |
 |---|---|---|
-| 1 | Raw LiDAR vs UKF Filtered 비교 | 📎 추가 예정 |
-| 2 | UKF + NMPC 통합 자율주행 | 📎 추가 예정 |
-| 3 | DNN 적용 전후 연산 속도 비교 | 📎 추가 예정 |
+| 1 | 알고리즘 미적용 vs UKF+NMPC+DNN 비교 주행 | [▶ 영상 보기](demo.mp4) |
+
 
 ---
 
